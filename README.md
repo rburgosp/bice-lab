@@ -76,7 +76,7 @@ pagar el monto de los <span class=SpellE>commodityes</span><o:p></o:p></p>
 
 <p class=MsoNormal>se anexará a los datos de la persona en la tabla <o:p></o:p></p>
 
-<p class=MsoNormal>los datos de persona almacenado y obtención se obtienen
+<p class=MsoNormal>los datos de persona y almacenado se obtienen
 desde el Microservicio <span class=SpellE><b>MsRestGestionUsuario</b></span><o:p></o:p></p>
 
 <p class=MsoNormal>y los <span class=SpellE>commodityes</span> y valor dólar se
@@ -99,7 +99,7 @@ run test</b><o:p></o:p></p>
 class=SpellE>implemento</span> <span class=GramE>un test</span> en el servicio <span
 class=SpellE><b>MsProxyIndicesEconomicos</b></span> el cual se puede ejecutar
 quitando la propiedad <b>&lt;<span class=SpellE>skipTests</span>&gt;</b> desde
-el <b>pom.xml</b><o:p></o:p></p>
+el <b>pom.xml</b><o:p></o:p> y compilado con maven</p>
 
 <p class=MsoNormal>o desde algún id como eclipse ejecutar la clase test con
 Junit</p>
