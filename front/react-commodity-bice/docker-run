@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+#get name of the current directory
+NAME=$(basename "$PWD")
+
+#run the docker
+docker run -p 4201:4201 -e ENV=local $NAME

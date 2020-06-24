@@ -1,0 +1,30 @@
+version: '3'
+
+services:     
+  ms-gestion-usuario:
+    build: ./back/MsRestGestionUsuario
+    command: bundle exec ms-gestion-usuario serve --incremental --host 0.0.0.0   # inicia imagen en modo servidor
+    ports:
+      - 8090:8090
+    volumes:
+      - .:/app # volumen 
+      
+  ms-proxy-indices-economicos:
+    build: ./back/MsProxyIndicesEconomicos
+    command: bundle exec ms-proxy-indices serve --incremental --host 0.0.0.0   # inicia imagen en modo servidor
+    ports:
+      - 8091:8091    
+    volumes:
+      - .:/app # volumen 
+      
+  react-app-commodity:
+    container_name: react-app-commodity
+    build:
+      context: ./front/react-commodity-bice
+      dockerfile: Dockerfile
+#   volumes:
+#      - '.:/app'
+#      - '/app/node_modules'
+    ports:
+      - 4000:4000     
+    
